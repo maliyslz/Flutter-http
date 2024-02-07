@@ -14,7 +14,7 @@ class Product {
     productName = json["productName"];
     quantityPerUnit = json["quantityPerUnit"];
     unitPrice = double.tryParse(json["unitPrice"].toString()) ;
-    unitsInStock = json["unitsInStock"];
+    unitsInStock = int.tryParse(json["unitsInStock"].toString());
   }
 
   Map toJson() {
